@@ -33,7 +33,7 @@ A simple MQTT connection tutorial between Arduino MKR1000 as the MQTT Client (pu
 
 ```pub.ino```: set Arduino MKR1000 as MQTT publisher
 
-  ```arduino
+  ```c++
   #include "credential.h"
   #include <ArduinoMqttClient.h>
   #include <WiFi101.h>
@@ -75,7 +75,7 @@ A simple MQTT connection tutorial between Arduino MKR1000 as the MQTT Client (pu
 
 ```sub.ino```: set Arduino MKR1000 as MQTT subscriber
 
-  ```arduino
+  ```c++
   #include "credential.h"
   #include <ArduinoMqttClient.h>
   #include <WiFi101.h>
