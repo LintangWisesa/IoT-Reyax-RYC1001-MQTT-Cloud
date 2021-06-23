@@ -1,6 +1,99 @@
-# IoT Hardware MQTT Client & Reyax RYC1001 MQTT Cloud
+# Arduino MKR1000 & Reyax RYC1001 MQTT Cloud
 
 <hr>
+
+[![Arduino MKR1000 & Reyax RYC1001 MQTT Cloud](https://img.youtube.com/vi/RfUGAE88Bhw/0.jpg)](https://www.youtube.com/watch?v=RfUGAE88Bhw)
+
+- ```credential.h```: define credential values on a header file
+
+  ```h
+  #define WIFI_SSID "your_wifi_name"
+  #define WIFI_PASS "your_wifi_pass"
+  #define MQTT_BROKER "iot.reyax.com"
+  #define MQTT_USER "your_reyax_username"
+  #define MQTT_PASS "your_reyax_password"
+  #define MQTT_CLID "your_reyax_clientid"
+  #define MQTT_PORT 1883
+  #define MQTT_TOPIC "lintang"
+  ```
+
+- ```pub.ino```: set Arduino MKR1000 as MQTT publisher
+
+  ```arduino
+  #include "credential.h"
+  #include <ArduinoMqttClient.h>
+  #include <WiFi101.h>
+
+  WiFiClient wifiClient;
+  MqttClient mqttClient(wifiClient);
+  int count = 0;
+
+  void setup() {
+      Serial.begin(115200);
+      while(WiFi.begin(WIFI_SSID, WIFI_PASS) != WL_CONNECTED){
+          Serial.print("."); 
+          delay(500);
+      }
+      Serial.println("Terhubung ke WiFi!");
+      mqttClient.setId(MQTT_CLID);
+      mqttClient.setUsernamePassword(MQTT_USER, MQTT_PASS);
+      if (!mqttClient.connect(MQTT_BROKER, MQTT_PORT)){
+          Serial.println("Gagal terhubung ke MQTT Cloud!");
+          Serial.println(mqttClient.connectError());
+      }
+      Serial.println("Terhubung ke MQTT Cloud!");
+  }
+
+  void loop() {
+      mqttClient.poll();
+      mqttClient.beginMessage(MQTT_TOPIC);
+      mqttClient.print("Data = ");
+      mqttClient.print(count);
+      mqttClient.endMessage();
+      Serial.print("Terkirim: Data = ");
+      Serial.println(count);
+      count++;
+      delay(2000);
+  }
+  ```
+
+- ```sub.ino```: set Arduino MKR1000 as MQTT subscriber
+
+  ```arduino
+  #include "credential.h"
+  #include <ArduinoMqttClient.h>
+  #include <WiFi101.h>
+
+  WiFiClient wifiClient;
+  MqttClient mqttClient(wifiClient);
+  int count = 0;
+
+  void setup() {
+      Serial.begin(9600);
+      while(WiFi.begin(WIFI_SSID, WIFI_PASS) != WL_CONNECTED){
+          Serial.print("."); 
+          delay(500);
+      }
+      Serial.println("Terhubung ke WiFi!");
+      mqttClient.setId(MQTT_CLID);
+      mqttClient.setUsernamePassword(MQTT_USER, MQTT_PASS);
+      if (!mqttClient.connect(MQTT_BROKER, MQTT_PORT)){
+          Serial.println("Gagal terhubung ke MQTT Cloud!");
+          Serial.println(mqttClient.connectError());
+      }
+      Serial.println("Terhubung ke MQTT Cloud!");
+      mqttClient.subscribe(MQTT_TOPIC);
+  }
+
+  void loop() {
+      if (mqttClient.parseMessage()){
+          while (mqttClient.available()){
+          Serial.print((char)mqttClient.read());
+          }
+          Serial.println();
+      }
+  }
+  ```
 
 #### 🍔 Lintang Wisesa
 
@@ -19,7 +112,7 @@
 </a>
 
 <a href="https://www.youtube.com/user/lintangbagus">
-  <img style="margin-right:10px" align="left" alt="lintang youtube" width="29px" src="https://www.pinclipart.com/picdir/big/55-557137_a-quiet-drifter-takes-a-janitorial-job-at.png" />
+  <img style="margin-right:10px" align="left" alt="lintang youtube" width="29px" src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" />
 </a>
 
 <a href="https://www.linkedin.com/in/lintangwisesa/">
