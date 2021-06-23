@@ -1,10 +1,22 @@
 # Arduino MKR1000 & Reyax RYC1001 MQTT Cloud
 
-<hr>
-
 [![Arduino MKR1000 & Reyax RYC1001 MQTT Cloud](https://img.youtube.com/vi/RfUGAE88Bhw/0.jpg)](https://www.youtube.com/watch?v=RfUGAE88Bhw)
 
-- ```credential.h```: define credential values on a header file
+A simple MQTT connection tutorial between Arduino MKR1000 as the MQTT Client (publisher & subscriber) and Reyax RYC1001 MQTT IoT Cloud. Tools used in this tutorial: Arduino MKR1000, Arduino IDE 2.0, ```ArduinoMqttClient``` library, Reyax RYC1001 & MQTT.fx desktop application. Detailed tutorial can be [watched here](https://www.youtube.com/watch?v=RfUGAE88Bhw).
+
+🎁 RYC1001 purchase link: [click here](http://amzn.to/3hAY5zp)
+
+📁 MQTT.fx: [click here](https://softblade.de/en/download-2/)
+
+📁 Arduino MKR1000: [click here](https://store.arduino.cc/usa/arduino-mkr1000)
+
+📁 Arduino MQTT Client: [click here](https://github.com/arduino-libraries/ArduinoMqttClient)
+
+<br>
+
+### 📝 Source Code
+
+```credential.h```: define credential values on a header file
 
   ```h
   #define WIFI_SSID "your_wifi_name"
@@ -17,7 +29,9 @@
   #define MQTT_TOPIC "lintang"
   ```
 
-- ```pub.ino```: set Arduino MKR1000 as MQTT publisher
+<br>
+
+```pub.ino```: set Arduino MKR1000 as MQTT publisher
 
   ```arduino
   #include "credential.h"
@@ -57,7 +71,9 @@
   }
   ```
 
-- ```sub.ino```: set Arduino MKR1000 as MQTT subscriber
+<br>
+
+```sub.ino```: set Arduino MKR1000 as MQTT subscriber
 
   ```arduino
   #include "credential.h"
@@ -94,6 +110,8 @@
       }
   }
   ```
+
+<br>
 
 #### 🍔 Lintang Wisesa
 
