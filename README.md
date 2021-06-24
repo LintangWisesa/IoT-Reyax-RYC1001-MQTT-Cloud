@@ -1,6 +1,21 @@
 # IoT Hardware MQTT Client & Reyax RYC1001 MQTT Cloud
 
+1. __Arduino MKR1000 & Reyax RYC1001 MQTT Cloud__
+
+    Video tutorial: [watch here](https://www.youtube.com/watch?v=RfUGAE88Bhw) & source code: [fork here](https://github.com/LintangWisesa/IoT-Reyax-RYC1001-MQTT-Cloud/tree/master/MKR1000).
+
+    [![Arduino MKR1000 & Reyax RYC1001 MQTT Cloud](https://img.youtube.com/vi/RfUGAE88Bhw/0.jpg)](https://www.youtube.com/watch?v=RfUGAE88Bhw)
+
 <hr>
+
+2. __ESP8266 & Reyax RYC1001 MQTT Cloud__
+  
+    Video tutorial: [watch here](https://www.youtube.com/watch?v=R9btcp-W6iE) & source code: [fork here](https://github.com/LintangWisesa/IoT-Reyax-RYC1001-MQTT-Cloud/tree/master/ESP8266).
+
+    [![ESP8266 & Reyax RYC1001 MQTT Cloud](https://img.youtube.com/vi/R9btcp-W6iE/0.jpg)](https://www.youtube.com/watch?v=R9btcp-W6iE)
+
+<hr>
+
 
 #### 🍔 Lintang Wisesa
 
