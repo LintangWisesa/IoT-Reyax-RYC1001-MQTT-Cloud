@@ -1,6 +1,117 @@
-# IoT Hardware MQTT Client & Reyax RYC1001 MQTT Cloud
+# ESP8266 & Reyax RYC1001 MQTT Cloud
 
-<hr>
+[![ESP8266 & Reyax RYC1001 MQTT Cloud](https://img.youtube.com/vi/R9btcp-W6iE/0.jpg)](https://www.youtube.com/watch?v=R9btcp-W6iE)
+
+A simple MQTT connection tutorial between NodeMCU ESP8266 as the MQTT Client (publisher & subscriber) and Reyax RYC1001 MQTT IoT Cloud. Tools used in this tutorial: ESP8266, Arduino IDE 2.0, ```ArduinoMqttClient``` library, Reyax RYC1001 & MQTT.fx desktop application. Detailed tutorial can be [watched here](https://www.youtube.com/watch?v=R9btcp-W6iE).
+
+🎁 RYC1001 purchase link: [click here](http://amzn.to/3hAY5zp)
+
+📁 MQTT.fx: [click here](https://softblade.de/en/download-2/)
+
+📁 Arduino MQTT Client: [click here](https://github.com/arduino-libraries/ArduinoMqttClient)
+
+<br>
+
+### 📝 Source Code
+
+```credential.h```: define credential values on a header file
+
+  ```h
+  #define WIFI_SSID "your_wifi_name"
+  #define WIFI_PASS "your_wifi_pass"
+  #define MQTT_BROKER "iot.reyax.com"
+  #define MQTT_USER "your_reyax_username"
+  #define MQTT_PASS "your_reyax_password"
+  #define MQTT_CLID "your_reyax_clientid"
+  #define MQTT_PORT 1883
+  #define MQTT_TOPIC "lintang"
+  ```
+
+<br>
+
+```pub.ino```: set ESP8266 as MQTT publisher
+
+  ```c++
+  #include "credential.h"
+  #include <ArduinoMqttClient.h>
+  #include <ESP8266WiFi.h>
+
+  WiFiClient wifiClient;
+  MqttClient mqttClient(wifiClient);
+  int count = 0;
+
+  void setup() {
+    Serial.begin(115200);
+    WiFi.begin(WIFI_SSID, WIFI_PASS);
+    while(WiFi.status() != WL_CONNECTED){
+        Serial.print("."); 
+        delay(500);
+    }
+    Serial.println("Terhubung ke WiFi!");
+    mqttClient.setId(MQTT_CLID);
+    mqttClient.setUsernamePassword(MQTT_USER, MQTT_PASS);
+    if (!mqttClient.connect(MQTT_BROKER, MQTT_PORT)){
+        Serial.println("Gagal terhubung ke MQTT Cloud!");
+        Serial.println(mqttClient.connectError());
+    }
+    Serial.println("Terhubung ke MQTT Cloud!");
+  }
+
+  void loop() {
+    mqttClient.poll();
+    mqttClient.beginMessage(MQTT_TOPIC);
+    mqttClient.print("Data = ");
+    mqttClient.print(count);
+    mqttClient.endMessage();
+    Serial.print("Terkirim: Data = ");
+    Serial.println(count);
+    count++;
+    delay(2000);
+  }
+  ```
+
+<br>
+
+```sub.ino```: set ESP8266 as MQTT subscriber
+
+  ```c++
+  #include "credential.h"
+  #include <ArduinoMqttClient.h>
+  #include <ESP8266WiFi.h>
+
+  WiFiClient wifiClient;
+  MqttClient mqttClient(wifiClient);
+  int count = 0;
+
+  void setup() {
+    Serial.begin(9600);
+    WiFi.begin(WIFI_SSID, WIFI_PASS);
+    while(WiFi.status() != WL_CONNECTED){
+        Serial.print("."); 
+        delay(500);
+    }
+    Serial.println("Terhubung ke WiFi!");
+    mqttClient.setId(MQTT_CLID);
+    mqttClient.setUsernamePassword(MQTT_USER, MQTT_PASS);
+    if (!mqttClient.connect(MQTT_BROKER, MQTT_PORT)){
+        Serial.println("Gagal terhubung ke MQTT Cloud!");
+        Serial.println(mqttClient.connectError());
+    }
+    Serial.println("Terhubung ke MQTT Cloud!");
+    mqttClient.subscribe(MQTT_TOPIC);
+  }
+
+  void loop() {
+    if (mqttClient.parseMessage()){
+        while (mqttClient.available()){
+        Serial.print((char)mqttClient.read());
+        }
+        Serial.println();
+    }
+  }
+  ```
+
+<br>
 
 #### 🍔 Lintang Wisesa
 
@@ -19,7 +130,7 @@
 </a>
 
 <a href="https://www.youtube.com/user/lintangbagus">
-  <img style="margin-right:10px" align="left" alt="lintang youtube" width="29px" src="https://www.pinclipart.com/picdir/big/55-557137_a-quiet-drifter-takes-a-janitorial-job-at.png" />
+  <img style="margin-right:10px" align="left" alt="lintang youtube" width="29px" src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" />
 </a>
 
 <a href="https://www.linkedin.com/in/lintangwisesa/">
