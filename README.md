@@ -16,6 +16,13 @@
 
 <hr>
 
+3. __ESP32 & Reyax RYC1001 MQTT Cloud__
+  
+    Video tutorial: [watch here](https://www.youtube.com/watch?v=TNpS1f87Vow) & source code: [fork here](https://github.com/LintangWisesa/IoT-Reyax-RYC1001-MQTT-Cloud/tree/master/ESP32).
+
+    [![ESP32 & Reyax RYC1001 MQTT Cloud](https://img.youtube.com/vi/TNpS1f87Vow/0.jpg)](https://www.youtube.com/watch?v=TNpS1f87Vow)
+
+<hr>
 
 #### 🍔 Lintang Wisesa
 
