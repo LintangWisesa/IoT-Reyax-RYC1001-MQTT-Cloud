@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="com.bosch.cds.xdk.toolchain.704279065">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.bosch.cds.xdk.toolchain.704279065" moduleId="org.eclipse.cdt.core.settings" name="Default">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="${ProjName}" buildProperties="" description="" id="com.bosch.cds.xdk.toolchain.704279065" name="Default" parent="org.eclipse.cdt.build.core.emptycfg">
+					<folderInfo id="com.bosch.cds.xdk.toolchain.704279065.531790607" name="/" resourcePath="">
+						<toolChain id="com.bosch.cds.xdk.toolchain.831376417" name="BCDS XDK Toolchain" superClass="com.bosch.cds.xdk.toolchain">
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="com.bosch.cds.xdk.toolchain.targetplatform.913351793" isAbstract="false" osList="all" superClass="com.bosch.cds.xdk.toolchain.targetplatform"/>
+							<builder arguments="" autoBuildTarget="debug" buildPath="${workspace_loc:\EclipseMitaApplication\src-gen}" cleanBuildTarget="clean" enableAutoBuild="false" enableCleanBuild="true" enabledIncrementalBuild="true" id="com.bosch.cds.xdk.toolchain.builder.1798845056" incrementalBuildTarget="debug" keepEnvironmentInBuildfile="false" managedBuildOn="false" name="Gnu Make Builder" parallelBuildOn="true" parallelizationNumber="optimal" superClass="com.bosch.cds.xdk.toolchain.builder"/>
+							<tool id="com.bosch.cds.xdk.toolchain.c.1583863551" name="BCDS C Compiler" superClass="com.bosch.cds.xdk.toolchain.c">
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.c.compiler.option.include.paths.763632908" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${ARM_GCC}/arm-none-eabi/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ARM_GCC}/lib/gcc/arm-none-eabi/4.7.4/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ARM_GCC}/lib/gcc/arm-none-eabi/4.7.4/include-fixed&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Libraries/EMlib/3rd-party/EMLib/emlib/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Libraries/BLEStack/3rd-party/Alpwise/ALPW-BLESDKCM3/BLESW_LocationAndNavigation/Interfaces&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Libraries/WiFi/3rd-party/TI/simplelink/source&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Libraries/AzureIotSdkForC/3rd-party/azure-iot-sdk-c/provisioning_client/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Platform/LoRaDrivers/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Platform/Essentials/include/bsp&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Libraries/BLEStack/3rd-party/Alpwise/ALPW-BLESDKCM3/BLESW_AppleNotificationCenter/Interfaces&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Common/config/Drivers&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Libraries/AzureIotSdkForC/3rd-party/azure-iot-sdk-c/umqtt/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Libraries/EMlib/3rd-party/EMLib/Device/SiliconLabs/EFM32GG/Include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Platform/Essentials/include/mcu/efm32&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Libraries/BLEStack/3rd-party/Alpwise/ALPW-BLESDKCM3/BLESW_CyclingSpeedAndCadence/Interfaces&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Common/config/LoRaDrivers&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Libraries/WiFi/3rd-party/TI/examples/common&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Libraries/BLEStack/3rd-party/Alpwise/ALPW-BLESDKCM3/BLESW_WeightScale/Interfaces&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Libraries/EMlib/3rd-party/EMLib/CMSIS/Include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Common/config/AmazonFreeRTOS/FreeRTOS&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Libraries/AzureIotSdkForC/3rd-party/azure-iot-sdk-c/deps/azure-macro-utils-c/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Common/include/Sensor&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Libraries/BLEStack/3rd-party/Alpwise/ALPW-BLESDKCM3/BLESW_PhoneAlertStatus/Interfaces&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Common/source/Utility&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Libraries/BLEStack/3rd-party/Alpwise/ALPW-BLESDKCM3/BLESW_HeartRate/Interfaces&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Common/config&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Libraries/AzureIotSdkForC/3rd-party/azure-iot-sdk-c/deps/parson&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Common/source/Sensor&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Libraries/BLEStack/3rd-party/Alpwise/ALPW-BLESDKCM3/BLESW_ALPWDataExchange/Interfaces&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Platform/Essentials/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Libraries/BSX/BSX4/Source/algo/algo_bsx/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Libraries/BLEStack/3rd-party/Alpwise/ALPW-BLESDKCM3/BLESW_FindMe/Interfaces&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Libraries/WiFi/3rd-party/TI/simplelink/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Common/legacy/include/ServalPAL_WiFi&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Common/config/FOTA&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Libraries/AzureIotSdkForC/3rd-party/azure-iot-sdk-c/iothub_client/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Libraries/WiFi/3rd-party/TI/netapps&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Libraries/BLEStack/3rd-party/Alpwise/ALPW-BLESDKCM3/BLESW_Time/Interfaces&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Common/config/Utils&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Common/source/Adc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Libraries/BLEStack/3rd-party/Alpwise/ALPW-BLESDKCM3/BLESW_HumanInterfaceDevice/Interfaces&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Libraries/BLEStack/3rd-party/Alpwise/ALPW-BLESDKCM3/BLESW_BloodPressure/Interfaces&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Libraries/WiFi/3rd-party/TI/netapps/http/client&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Libraries/BLEStack/3rd-party/Alpwise/ALPW-BLESDKCM3/BLESW_CyclingPower/Interfaces&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Libraries/ServalStack/3rd-party/ServalStack/pal&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Platform/ServalPAL/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Platform/SensorToolbox/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Platform/FOTA/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Libraries/AzureIotSdkForC/3rd-party/azure-iot-sdk-c/provisioning_client/adapters&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Libraries/AzureIotSdkForC/3rd-party/azure-iot-sdk-c/c-utility/pal/generic&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Libraries/MbedTLS/3rd-party/mbedtls/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Libraries/WiFi/3rd-party/TI/oslib&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Libraries/BLEStack/3rd-party/Alpwise/ALPW-BLESDKCM3/BLESW_RunningSpeedAndCadence/Interfaces&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Common/config/MbedTLS&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Libraries/BLEStack/3rd-party/Alpwise/ALPW-BLESDKCM3/BLESW_CoreStack&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Libraries/BLEStack/3rd-party/Alpwise/ALPW-BLESDKCM3/BLESW_AlertNotification/Interfaces&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Common/source&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Libraries/FreeRTOS/3rd-party/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Libraries/AzureIotSdkForC/3rd-party/azure-iot-sdk-c/deps/umock-c/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Platform/Drivers/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Platform/BSP/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Libraries/FreeRTOS/3rd-party/include/private&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Common/include/Connectivity&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Common/legacy/include/BLE&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Libraries/AzureIotSdkForC/3rd-party/azure-iot-sdk-c/iothub_client/inc/internal&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Common/source/Connectivity/LWM2M&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Platform/Utils/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Libraries/BLEStack/3rd-party/Alpwise/ALPW-BLESDKCM3/BLESW_HealthThermometer/Interfaces&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Libraries/WiFi/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Common/source/Connectivity/BLE&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Libraries/BLEStack/3rd-party/Alpwise/ALPW-BLESDKCM3/BLESW_Proximity/Interfaces&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Platform/BLE/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Common/include/Utility&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Libraries/EMlib/3rd-party/EMLib/usb/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Platform/Sensors/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Common/source/Protected&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Libraries/ServalStack/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Libraries/MbedTLS/3rd-party/mbedtls/include/mbedtls&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Common/config/Essentials&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Libraries/BLEStack/3rd-party/Alpwise/ALPW-BLESDKCM3/BLESW_Glucose/Interfaces&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Common/config/ServalPal&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Common/source/Connectivity&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Platform/Wlan/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Common/certs/XDKDummy&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Libraries/FATfs/3rd-party/fatfs/src&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Libraries/BLEStack/3rd-party/Alpwise/ALPW-BLESDKCM3/BLESW_CoreStack/Interfaces&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Common/source/Private/ServalStack/src/TLS_MbedTLS&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Platform/SensorUtils/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Libraries/AzureIotSdkForC/3rd-party/azure-iot-sdk-c/c-utility/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Libraries/ServalStack/3rd-party/ServalStack/src/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Libraries/BLEStack/3rd-party/Alpwise/ALPW-BLESDKCM3/BLESW_CoreStack/Interfaces/Services&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Platform/BLE/include/services&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Platform/Essentials/include/mcu&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Libraries/BLEStack/3rd-party/Alpwise/ALPW-BLESDKCM3/BLESW_iBeacon/Interfaces&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Libraries/ServalStack/3rd-party/ServalStack/api&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Common/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Common/certs/Custom&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Common/config/AmazonFreeRTOS&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Libraries/WiFi/3rd-party/TI&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Libraries/BLEStack/3rd-party/Alpwise/ALPW-BLESDKCM3/BLESW_CoreStack/Interfaces/ATT&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Common/legacy/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${BCDS_BASE_DIR}/xdk110/Libraries/FreeRTOS/3rd-party/FreeRTOS/portable/GCC/ARM_CM3&quot;"/>
+								</option>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.c.compiler.option.preprocessor.def.symbols.351538351" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="SERVAL_POLICY_STACK_CALLS_TLS_API=1"/>
+									<listOptionValue builtIn="false" value="XDK_UTILITY_STORAGE=1"/>
+									<listOptionValue builtIn="false" value="XDK_MBEDTLS_PARSE_INFO=0"/>
+									<listOptionValue builtIn="false" value="XDK_SENSOR_EXTERNALSENSOR=1"/>
+									<listOptionValue builtIn="false" value="MBEDTLS_PK_PARSE_C=1"/>
+									<listOptionValue builtIn="false" value="SERVAL_ENABLE_XUDP=1"/>
+									<listOptionValue builtIn="false" value="SERVAL_ENABLE_SNTP_CLIENT=1"/>
+									<listOptionValue builtIn="false" value="SERVAL_LOG_LEVEL=SERVAL_LOG_LEVEL_ERROR"/>
+									<listOptionValue builtIn="false" value="SERVAL_ENABLE_HTTP=1"/>
+									<listOptionValue builtIn="false" value="SERVAL_XML_PARSER=1"/>
+									<listOptionValue builtIn="false" value="MBEDTLS_ASN1_PARSE_C=1"/>
+									<listOptionValue builtIn="false" value="MBEDTLS_CONFIG_FILE=&lt;MbedtlsConfig.h&gt;"/>
+									<listOptionValue builtIn="false" value="SERVAL_MAX_SECURE_SOCKETS=5"/>
+									<listOptionValue builtIn="false" value="MAJOR_SW_NO=0x00"/>
+									<listOptionValue builtIn="false" value="XDK_CONNECTIVITY_MQTT=1"/>
+									<listOptionValue builtIn="false" value="SERVAL_HTTP_MAX_NUM_SESSIONS=3"/>
+									<listOptionValue builtIn="false" value="BCDS_TARGET_EFM32=1"/>
+									<listOptionValue builtIn="false" value="LWM2M_DISABLE_CLIENT_QUEUEMODE=1"/>
+									<listOptionValue builtIn="false" value="PAL_MAX_NUM_ADDITIONAL_COMM_BUFFERS=6"/>
+									<listOptionValue builtIn="false" value="SERVAL_ENABLE_COAP_COMBINED_SERVER_AND_CLIENT=0"/>
+									<listOptionValue builtIn="false" value="SERVAL_EXPERIMENTAL_DTLS_MONITOR_EXTERN=0"/>
+									<listOptionValue builtIn="false" value="PATCH_SW_NO=0x01"/>
+									<listOptionValue builtIn="false" value="SERVAL_ENABLE_XTCP_SERVER=1"/>
+									<listOptionValue builtIn="false" value="DEBUG_LOGGING=0"/>
+									<listOptionValue builtIn="false" value="LWM2M_MAX_NUM_OBSERVATIONS=50"/>
+									<listOptionValue builtIn="false" value="MINOR_SW_NO=0x00"/>
+									<listOptionValue builtIn="false" value="XDK_CONNECTIVITY_UDP=1"/>
+									<listOptionValue builtIn="false" value="SERVAL_ENABLE_COAP_OBSERVE=1"/>
+									<listOptionValue builtIn="false" value="SERVAL_ENABLE_XTCP=1"/>
+									<listOptionValue builtIn="false" value="SERVAL_ENABLE_DTLS=0"/>
+									<listOptionValue builtIn="false" value="MBEDTLS_GENPRIME=1"/>
+									<listOptionValue builtIn="false" value="SERVAL_ENABLE_MQTT=1"/>
+									<listOptionValue builtIn="false" value="SERVAL_ENABLE_REST_CLIENT=1"/>
+									<listOptionValue builtIn="false" value="XDK_CONNECTIVITY_HTTPRESTCLIENT=1"/>
+									<listOptionValue builtIn="false" value="SERVAL_ENABLE_REST_SERVER=1"/>
+									<listOptionValue builtIn="false" value="MBEDTLS_ENTROPY_C=1"/>
+									<listOptionValue builtIn="false" value="SERVAL_ENABLE_XTCP_CLIENT=1"/>
+									<listOptionValue builtIn="false" value="SERVAL_ENABLE_TLS=0"/>
+									<listOptionValue builtIn="false" value="SERVAL_MAX_SECURE_CONNECTIONS=5"/>
+									<listOptionValue builtIn="false" value="SERVAL_ENABLE_REST_COAP_BINDING=1"/>
+									<listOptionValue builtIn="false" value="SERVAL_TLS_MBEDTLS=0"/>
+									<listOptionValue builtIn="false" value="LWM2M_IP_ADDRESS_MAX_LENGTH=65"/>
+									<listOptionValue builtIn="false" value="SERVAL_ENABLE_COAP_CLIENT=1"/>
+									<listOptionValue builtIn="false" value="SERVAL_ENABLE_COAP_SERVER=1"/>
+									<listOptionValue builtIn="false" value="SERVAL_ENABLE_HTTP_AUTH_DIGEST=1"/>
+									<listOptionValue builtIn="false" value="XDK_CONNECTIVITY_LED=1"/>
+									<listOptionValue builtIn="false" value="SERVAL_ENABLE_TLS_ECC=0"/>
+									<listOptionValue builtIn="false" value="SERVAL_MAX_NUM_MESSAGES=16"/>
+									<listOptionValue builtIn="false" value="COAP_MAX_NUM_OBSERVATIONS=50"/>
+									<listOptionValue builtIn="false" value="SERVAL_ENABLE_TLS_PSK=0"/>
+									<listOptionValue builtIn="false" value="mqttDO_NOT_USE_CUSTOM_CONFIG=1"/>
+									<listOptionValue builtIn="false" value="SERVAL_SECURITY_API_VERSION=2"/>
+									<listOptionValue builtIn="false" value="SERVAL_HTTP_MAX_LENGTH_URL=256"/>
+									<listOptionValue builtIn="false" value="XDK_SENSOR_SENSOR=1"/>
+									<listOptionValue builtIn="false" value="MBEDTLS_BIGNUM_C=1"/>
+									<listOptionValue builtIn="false" value="SERVAL_ENABLE_HTTP_AUTH=1"/>
+									<listOptionValue builtIn="false" value="SERVAL_ENABLE_HTTP_RANGE_HANDLING=1"/>
+									<listOptionValue builtIn="false" value="MBEDTLS_PK_C=1"/>
+									<listOptionValue builtIn="false" value="SERVAL_LWM2M_SECURITY_INFO_MAX_LENGTH=65"/>
+									<listOptionValue builtIn="false" value="SERVAL_ENABLE_APP_DATA_ACCESS=0"/>
+									<listOptionValue builtIn="false" value="MBEDTLS_RSA_C=1"/>
+									<listOptionValue builtIn="false" value="MBEDTLS_BASE64_C=1"/>
+									<listOptionValue builtIn="false" value="XDK_UTILITY_SNTP=1"/>
+									<listOptionValue builtIn="false" value="COAP_OVERLOAD_QUEUE_SIZE=15"/>
+									<listOptionValue builtIn="false" value="SERVAL_ENABLE_DPWS=0"/>
+									<listOptionValue builtIn="false" value="XDK_CONNECTIVITY_BLE=1"/>
+									<listOptionValue builtIn="false" value="SERVAL_ENABLE_LWM2M=1"/>
+									<listOptionValue builtIn="false" value="XDK_CONNECTIVITY_LORA=1"/>
+									<listOptionValue builtIn="false" value="SERVAL_ENABLE_TLS_SERVER=0"/>
+									<listOptionValue builtIn="false" value="SERVAL_ENABLE_DTLS_ECC=0"/>
+									<listOptionValue builtIn="false" value="SERVAL_ENABLE_DTLS_HEADER_LOGGING=0"/>
+									<listOptionValue builtIn="false" value="SERVAL_ENABLE_DTLS_RSA=0"/>
+									<listOptionValue builtIn="false" value="SERVAL_ENABLE_REST_HTTP_BINDING=1"/>
+									<listOptionValue builtIn="false" value="SERVAL_ENABLE_DUTY_CYCLING=1"/>
+									<listOptionValue builtIn="false" value="SERVAL_ENABLE_DTLS_PSK=0"/>
+									<listOptionValue builtIn="false" value="XDK_CONNECTIVITY_LWM2M=1"/>
+									<listOptionValue builtIn="false" value="MBEDTLS_CTR_DRBG_C=1"/>
+									<listOptionValue builtIn="false" value="MBEDTLS_MD_C=1"/>
+									<listOptionValue builtIn="false" value="BCDS_SERVALPAL_WIFI=1"/>
+									<listOptionValue builtIn="false" value="XDK_SENSOR_VIRTUALSENSOR=1"/>
+									<listOptionValue builtIn="false" value="XDK_CONNECTIVITY_WLAN=1"/>
+									<listOptionValue builtIn="false" value="COAP_MSG_MAX_LEN=224"/>
+									<listOptionValue builtIn="false" value="SERVAL_ENABLE_DTLS_SESSION_ID=0"/>
+									<listOptionValue builtIn="false" value="ARM_MATH_CM3=1"/>
+									<listOptionValue builtIn="false" value="SERVAL_ENABLE_TLS_CLIENT=0"/>
+									<listOptionValue builtIn="false" value="EFM32GG390F1024=1"/>
+									<listOptionValue builtIn="false" value="SERVAL_DTLS_FLIGHT_MAX_RETRIES=4"/>
+									<listOptionValue builtIn="false" value="MBEDTLS_OID_C=1"/>
+									<listOptionValue builtIn="false" value="BCDS_FREERTOS_INCLUDE_AWS=0"/>
+									<listOptionValue builtIn="false" value="__SL__=1"/>
+									<listOptionValue builtIn="false" value="SERVAL_SECURE_SERVER_CONNECTION_TIMEOUT=300000"/>
+									<listOptionValue builtIn="false" value="MBEDTLS_NO_PLATFORM_ENTROPY=1"/>
+									<listOptionValue builtIn="false" value="BCDS_EMLIB_INCLUDE_USB=1"/>
+									<listOptionValue builtIn="false" value="MBEDTLS_PEM_PARSE_C=1"/>
+									<listOptionValue builtIn="false" value="MBEDTLS_AES_C=1"/>
+									<listOptionValue builtIn="false" value="DEFAULT_STARTUP=1"/>
+									<listOptionValue builtIn="false" value="SERVAL_HTTP_SESSION_MONITOR_TIMEOUT=4000"/>
+									<listOptionValue builtIn="false" value="SERVAL_ENABLE_HTTP_SERVER=1"/>
+									<listOptionValue builtIn="false" value="MBEDTLS_SHA256_C=1"/>
+									<listOptionValue builtIn="false" value="SERVAL_MAX_SIZE_APP_PACKET=600"/>
+									<listOptionValue builtIn="false" value="SERVAL_ENABLE_WEBSERVER=1"/>
+									<listOptionValue builtIn="false" value="LWM2M_MAX_LENGTH_DEVICE_NAME=32"/>
+									<listOptionValue builtIn="false" value="XDK_SENSOR_BUTTON=1"/>
+									<listOptionValue builtIn="false" value="ENABLE_DMA=1"/>
+									<listOptionValue builtIn="false" value="MBEDTLS_PKCS1_V15=1"/>
+									<listOptionValue builtIn="false" value="__OSI__=1"/>
+									<listOptionValue builtIn="false" value="SERVAL_ENABLE_HTTP_CLIENT=1"/>
+									<listOptionValue builtIn="false" value="SERVAL_DOWNGRADE_TLS=1"/>
+									<listOptionValue builtIn="false" value="XDK_FOTA_ENABLED_BOOTLOADER=1"/>
+									<listOptionValue builtIn="false" value="SERVAL_ENABLE_DTLS_CLIENT=0"/>
+									<listOptionValue builtIn="false" value="SERVAL_ENABLE_DTLS_SERVER=0"/>
+									<listOptionValue builtIn="false" value="XDK_UTILITY_SERVALPAL=1"/>
+									<listOptionValue builtIn="false" value="BCDS_SERVAL_COMMBUFF_SEND_BUFFER_MAX_LEN=1000"/>
+								</option>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.c.compiler.option.preprocessor.undef.symbol.2033453820" superClass="gnu.c.compiler.option.preprocessor.undef.symbol" valueType="undefDefinedSymbols">
+									<listOptionValue builtIn="false" value="BCDS_PACKAGE_ID"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1438301980" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+							</tool>
+							<tool id="com.bosch.cds.xdk.toolchain.c.ld.1714533597" name="BCDS C Linker" superClass="com.bosch.cds.xdk.toolchain.c.ld">
+								<inputType id="cdt.managedbuild.tool.gnu.c.linker.input.608018645" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="com.bosch.cds.xdk.toolchain.as.880537108" name="BCDS Assembler" superClass="com.bosch.cds.xdk.toolchain.as">
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1890721076" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+							</tool>
+							<tool id="com.bosch.cds.xdk.toolchain.cxx.2053842386" name="BCDS C++ Compiler" superClass="com.bosch.cds.xdk.toolchain.cxx"/>
+							<tool id="com.bosch.cds.xdk.toolchain.cxx.ld.284836543" name="BCDS C++ Linker" superClass="com.bosch.cds.xdk.toolchain.cxx.ld"/>
+							<tool id="com.bosch.cds.xdk.toolchain.ar.201357502" name="BCDS Archiver" superClass="com.bosch.cds.xdk.toolchain.ar"/>
+							<tool id="com.bosch.cds.xdk.toolchain.tool1.1006032541" name="BCDS Create Flash Image" superClass="com.bosch.cds.xdk.toolchain.tool1"/>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry excluding="SDK/xdk110/Apps" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="EclipseEclipseMitaApplication.null.219994880" name="EclipseEclipseMitaApplication"/>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		<scannerConfigBuildInfo instanceId="com.bosch.cds.xdk.toolchain.704279065;com.bosch.cds.xdk.toolchain.704279065.531790607;com.bosch.cds.xdk.toolchain.c.1583863551;cdt.managedbuild.tool.gnu.c.compiler.input.1438301980">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
+	<storageModule moduleId="refreshScope" versionNumber="2">
+		<configuration configurationName="Default">
+			<resource resourceType="PROJECT" workspacePath="/EclipseEclipseMitaApplication"/>
+		</configuration>
+	</storageModule>
+</cproject>

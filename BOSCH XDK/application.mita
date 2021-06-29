@@ -1,0 +1,28 @@
+package main;
+import platforms.xdk110;
+// Arduino Uno, Common gateway: BME280, BME280, BLE, NB-IoT, GPS, CAT-M1
+
+var x = 0;
+
+// resource wifi
+setup wifi : WLAN {
+	ssid = 'nama_wifi';
+	authentication = Personal(psk='password_wifi');
+}
+
+// resource mqtt
+setup broker : MQTT {
+	transport = wifi;
+	cleanSession = true;
+	url = 'mqtt://iot.reyax.com:1883';
+	clientId = 'user+4digitrandom';
+	authentication = Login('username', 'password');
+	var topik = topic('lintang', 0);
+}
+
+// event
+every 3 seconds {
+	broker.topik.write(`Data = ${x}`);
+	println(`Data = ${x}`);
+	x++;
+}
