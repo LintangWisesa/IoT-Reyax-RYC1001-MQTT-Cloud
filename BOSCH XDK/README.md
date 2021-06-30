@@ -1,36 +1,54 @@
-# IoT Hardware MQTT Client & Reyax RYC1001 MQTT Cloud
+# BOSCH XDK & Reyax RYC1001 MQTT Cloud
 
-1. __Arduino MKR1000 & Reyax RYC1001 MQTT Cloud__
+[![BOSCH XDK & Reyax RYC1001 MQTT Cloud](https://img.youtube.com/vi/v2k90KeUvJg/0.jpg)](https://youtu.be/v2k90KeUvJg)
 
-    Video tutorial: [watch here](https://www.youtube.com/watch?v=RfUGAE88Bhw) & source code: [fork here](https://github.com/LintangWisesa/IoT-Reyax-RYC1001-MQTT-Cloud/tree/master/MKR1000).
+A simple MQTT connection tutorial between BOSCH XDK as the MQTT publisher and Reyax RYC1001 MQTT IoT Cloud. Tools used in this tutorial: BOSCH XDK, XDK Workbench (Eclipse Mita programming language), Reyax RYC1001 & MQTT.fx desktop application. Detailed tutorial can be [watched here](https://youtu.be/v2k90KeUvJg).
 
-    [![Arduino MKR1000 & Reyax RYC1001 MQTT Cloud](https://img.youtube.com/vi/RfUGAE88Bhw/0.jpg)](https://www.youtube.com/watch?v=RfUGAE88Bhw)
+🎁 RYC1001 purchase link: [click here](http://amzn.to/3hAY5zp)
 
-<hr>
+🎁 REYAX: [click here](http://reyax.com/product/)
 
-2. __ESP8266 & Reyax RYC1001 MQTT Cloud__
-  
-    Video tutorial: [watch here](https://www.youtube.com/watch?v=R9btcp-W6iE) & source code: [fork here](https://github.com/LintangWisesa/IoT-Reyax-RYC1001-MQTT-Cloud/tree/master/ESP8266).
+📁 MQTT.fx: [click here](https://softblade.de/en/download-2/)
 
-    [![ESP8266 & Reyax RYC1001 MQTT Cloud](https://img.youtube.com/vi/R9btcp-W6iE/0.jpg)](https://www.youtube.com/watch?v=R9btcp-W6iE)
+📁 BOSCH XDK: [click here](https://developer.bosch.com/products-and-services/sdks/xdk)
 
-<hr>
+📁 XDK Workbench: [click here](https://developer.bosch.com/products-and-services/sdks/xdk/downloads)
 
-3. __ESP32 & Reyax RYC1001 MQTT Cloud__
-  
-    Video tutorial: [watch here](https://www.youtube.com/watch?v=TNpS1f87Vow) & source code: [fork here](https://github.com/LintangWisesa/IoT-Reyax-RYC1001-MQTT-Cloud/tree/master/ESP32).
+📁 Eclipse Mita: [click here](https://www.eclipse.org/mita/)
 
-    [![ESP32 & Reyax RYC1001 MQTT Cloud](https://img.youtube.com/vi/TNpS1f87Vow/0.jpg)](https://www.youtube.com/watch?v=TNpS1f87Vow)
+<br>
 
-<hr>
+### 📝 Source Code
 
-4. __BOSCH XDK & Reyax RYC1001 MQTT Cloud__
-  
-    Video tutorial: [watch here](https://youtu.be/v2k90KeUvJg) & source code: [fork here](https://github.com/LintangWisesa/IoT-Reyax-RYC1001-MQTT-Cloud/tree/master/BOSCH%20XDK).
+```application.mita```
 
-    [![BOSCH XDK & Reyax RYC1001 MQTT Cloud](https://img.youtube.com/vi/v2k90KeUvJg/0.jpg)](https://youtu.be/v2k90KeUvJg)
+```java
+package main;
+import platforms.xdk110;
+var x = 0;
 
-<hr>
+setup wifi : WLAN {
+    ssid = 'nama_wifi';
+    authentication = Personal(psk='password_wifi');
+}
+
+setup broker : MQTT {
+    transport = wifi;
+    cleanSession = true;
+    url = 'mqtt://iot.reyax.com:1883';
+    clientId = 'clientid';
+    authentication = Login('username', 'password');
+    var topik = topic('lintang', 0);
+}
+
+every 3 seconds {
+    broker.topik.write(`Data = ${x}`);
+    println(`Data = ${x}`);
+    x++;
+}
+```
+
+<br>
 
 #### 🍔 Lintang Wisesa
 
@@ -49,7 +67,7 @@
 </a>
 
 <a href="https://www.youtube.com/user/lintangbagus">
-  <img style="margin-right:10px" align="left" alt="lintang youtube" width="29px" src="https://www.pinclipart.com/picdir/big/55-557137_a-quiet-drifter-takes-a-janitorial-job-at.png" />
+  <img style="margin-right:10px" align="left" alt="lintang youtube" width="29px" src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" />
 </a>
 
 <a href="https://www.linkedin.com/in/lintangwisesa/">
