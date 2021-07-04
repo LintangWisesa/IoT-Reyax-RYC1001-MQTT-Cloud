@@ -32,6 +32,12 @@
 
 <hr>
 
+5. __Particle Photon & Reyax RYC1001 MQTT Cloud__
+  
+    Video tutorial: [watch here](https://youtu.be/UQuKdZDXRwU) & source code: [fork here](https://github.com/LintangWisesa/IoT-Reyax-RYC1001-MQTT-Cloud/tree/master/PHOTON).
+
+    [![Particle Photon & Reyax RYC1001 MQTT Cloud](https://img.youtube.com/vi/UQuKdZDXRwU/0.jpg)](https://youtu.be/UQuKdZDXRwU)
+
 #### 🍔 Lintang Wisesa
 
 <br>
