@@ -38,6 +38,14 @@
 
     [![Particle Photon & Reyax RYC1001 MQTT Cloud](https://img.youtube.com/vi/UQuKdZDXRwU/0.jpg)](https://youtu.be/UQuKdZDXRwU)
 
+<hr>
+
+6. __Seeed Wio Terminal & Reyax RYC1001 MQTT Cloud__
+  
+    Video tutorial: [watch here](https://www.youtube.com/watch?v=Z9goxIazMP8) & source code: [fork here](https://github.com/LintangWisesa/IoT-Reyax-RYC1001-MQTT-Cloud/tree/master/WIO%20TERMINAL).
+
+    [![Seeed Wio Terminal & Reyax RYC1001 MQTT Cloud](https://img.youtube.com/vi/Z9goxIazMP8/0.jpg)](https://youtu.be/Z9goxIazMP8)
+
 #### 🍔 Lintang Wisesa
 
 <br>

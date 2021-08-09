@@ -48,5 +48,5 @@ void loop() {
     tft.setTextSize(10);
     tft.drawString(String(count), 20, 130);
     count++;
-    delay(2000);
+    delay(3000);
 }
